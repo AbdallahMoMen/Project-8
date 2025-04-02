@@ -15,6 +15,12 @@
 
 /* ========== Global Rules ========== */
 
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -25,10 +31,16 @@ html {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  margin-inline: auto;
 }
 
 /* ========== Global Rules ========== */
@@ -40,4 +52,202 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.trans-03 {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.main-btn {
+  background-color: var(--main-color);
+}
+
+.main-btn:hover {
+  background-color: #846a49;
+}
+
 /* ========== Custom FrameWork ========== */
+
+/* ========== Header Section ========== */
+
+header .container {
+  height: 72px;
+}
+
+header .logo img {
+  width: 80px;
+}
+
+header nav ul li a,
+header .nav-icons i,
+header .icons i {
+  color: #fff;
+  cursor: pointer;
+}
+
+header nav a:hover {
+  background-color: var(--main-color);
+}
+
+header .dropdown {
+  background-color: #1b1b1b;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+header .icons i:hover,
+header .icons i.active {
+  color: var(--main-color);
+}
+
+header .nav-icons i:last-child,
+header .dropdown {
+  display: none;
+}
+
+header input {
+  display: none;
+  caret-color: #fff;
+  background-color: #1b1b1b;
+  border: 1px solid var(--main-color);
+  color: #fff;
+}
+
+header input:focus {
+  outline: none;
+}
+
+/* ========== Header Section ========== */
+
+/* ========== Home Section ========== */
+
+.home {
+  min-height: 100vh;
+  background-image: url("./../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-text h2 {
+  color: var(--main-color);
+  font-size: 60px;
+}
+
+@media (max-width: 576px) {
+  .home-text h2 {
+    font-size: 40px;
+  }
+}
+
+/* ========== Home Section ========== */
+
+/* ========== About Section ========== */
+
+.about .container img {
+  height: 500px;
+  object-fit: fill;
+}
+
+/* ========== About Section ========== */
+
+/* ========== Products Section ========== */
+
+.product {
+  box-shadow: var(--box-shadow);
+}
+
+.product img {
+  height: 300px;
+  background-color: var(--second-color);
+}
+
+.product img:hover {
+  transform: scale(1.05) rotate(-2deg);
+  -webkit-transform: scale(1.05) rotate(-2deg);
+  -moz-transform: scale(1.05) rotate(-2deg);
+  -ms-transform: scale(1.05) rotate(-2deg);
+  -o-transform: scale(1.05) rotate(-2deg);
+}
+
+.product .price {
+  background-color: var(--main-color);
+}
+
+.product .add {
+  border: 2px solid var(--main-color);
+}
+
+.product .add:hover {
+  background-color: var(--main-color);
+}
+
+/* ========== Products Section ========== */
+
+/* ========== Customers Section ========== */
+
+.testi {
+  box-shadow: var(--box-shadow);
+}
+
+.testi:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+
+.testi .rate i {
+  color: var(--main-color);
+}
+
+.testi img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ========== Customers Section ========== */
+
+/* ========== Footer Section ========== */
+
+footer .part ul a {
+  color: var(--text-color);
+}
+
+footer .part .social a i {
+  width: 50px;
+  height: 50px;
+  color: var(--text-color);
+  background-color: var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .part .social a i:hover {
+  background-color: var(--main-color);
+}
+
+footer.copy {
+  background-color: var(--second-color);
+}
+
+/* ========== Footer Section ========== */

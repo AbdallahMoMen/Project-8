@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
+    <title>Responsive Coffee Shop Website</title>
     <!-- Awesome Font Library -->
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- BootStrap 5 Library -->
@@ -16,9 +16,388 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- ========== Section ========== -->
+    <!-- ========== Header Section ========== -->
 
-    <!-- ========== Section ========== -->
+    <header class="position-absolute top-0 w-100">
+      <div
+        class="container d-flex justify-content-between align-items-center text-white position-relative">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" class="img-fluid" />
+        </div>
+        <nav class="d-none d-md-block">
+          <ul
+            class="text-uppercase d-flex justify-content-center align-items-center gap-3">
+            <li>
+              <a href="#home" class="rounded py-2 px-3 trans-03">home</a>
+            </li>
+            <li>
+              <a href="#about" class="rounded py-2 px-3 trans-03">about us</a>
+            </li>
+            <li>
+              <a href="#products" class="rounded py-2 px-3 trans-03"
+                >products</a
+              >
+            </li>
+            <li>
+              <a href="#customers" class="rounded py-2 px-3 trans-03"
+                >customers</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-icons d-md-none position-relative">
+          <i class="fa-solid fa-bars fa-2x position-center"></i>
+          <i class="fa-solid fa-xmark fa-2x position-center"></i>
+        </div>
+        <nav
+          class="dropdown d-md-none position-absolute top-100 start-50 z-3 w-100 text-center rounded-bottom">
+          <ul class="text-uppercase">
+            <li class="py-3">
+              <a href="#home" class="rounded py-2 px-3 trans-03">home</a>
+            </li>
+            <li class="py-3">
+              <a href="#about" class="rounded py-2 px-3 trans-03">about us</a>
+            </li>
+            <li class="py-3">
+              <a href="#products" class="rounded py-2 px-3 trans-03"
+                >products</a
+              >
+            </li>
+            <li class="py-3">
+              <a href="#customers" class="rounded py-2 px-3 trans-03"
+                >customers</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <i class="fa-solid fa-cart-shopping fa-lg me-2 trans-03"></i>
+          <i class="fa-solid fa-magnifying-glass fa-lg trans-03"></i>
+        </div>
+        <form action="" class="position-absolute top-100 start-0 w-100">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search Here"
+            class="w-100 p-2 rounded-3" />
+        </form>
+        <!-- <div class="cart"></div> -->
+      </div>
+    </header>
+
+    <!-- ========== Header Section ========== -->
+
+    <!-- ========== Home Section ========== -->
+
+    <section class="home" id="home">
+      <div class="container row align-items-center position-center">
+        <div
+          class="home-text text-center text-md-start text-uppercase col col-md-7">
+          <h2 class="fw-bold">start your day with coffee</h2>
+          <p class="text-white fs-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            sed dignissimos nihil, eius ipsam adipisci unde saepe iusto veniam,
+            temporibus quae.
+          </p>
+          <a
+            href="#"
+            class="btn main-btn rounded text-capitalize text-white trans-03 fs-5"
+            >shop now</a
+          >
+        </div>
+        <div class="img-container d-none d-md-block col-md-5">
+          <img src="./images/main.png" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Home Section ========== -->
+
+    <!-- ========== About Section ========== -->
+
+    <section class="about mt-5" id="about">
+      <div class="container py-5 row">
+        <div class="img-container p-0 col-12 col-lg-6 mb-3 pe-lg-3">
+          <img src="./images/about.jpg" alt="" class="img-fluid rounded-3" />
+        </div>
+        <div class="about-text col-12 col-lg-6 fw-medium">
+          <h2 class="text-uppercase fw-bold">our history</h2>
+          <p class="fs-5 text-black-50">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+            pariatur eum, assumenda qui fugit aut numquam voluptas officiis
+            nihil accusantium, mollitia doloremque praesentium, cupiditate
+            commodi
+          </p>
+          <p class="fs-5 text-black-50">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+            pariatur eum, assumenda qui fugit aut numquam voluptas officiis
+            nihil accusantium, mollitia doloremque praesentium, cupiditate
+            commodi
+          </p>
+          <p class="fs-5 text-black-50">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+            accusantium placeat, repellat iure nemo praesentium quae.
+          </p>
+          <a
+            href="#"
+            class="btn main-btn rounded text-capitalize text-white trans-03 fs-5"
+            >shop now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== About Section ========== -->
+
+    <!-- ========== Products Section ========== -->
+
+    <section class="products mt-5" id="profucts">
+      <div class="container py-3">
+        <h2 class="text-uppercase text-center fw-bold py-3">
+          our popular products
+        </h2>
+        <div class="products-container resp-grid gap-3">
+          <div class="product rounded overflow-hidden bg-white p-3">
+            <img
+              src="./images/p1.png"
+              alt=""
+              class="img-fluid px-5 py-4 w-100 rounded-2 trans-03" />
+            <div class="product-info p-3">
+              <p class="text-uppercase fs-5">americano pure</p>
+              <div
+                class="controlls text-uppercase d-flex align-items-center justify-content-between">
+                <span class="price rounded py-1 px-2 text-white">$25</span>
+                <span class="add btn trans-03">add to cart</span>
+              </div>
+            </div>
+          </div>
+          <div class="product rounded overflow-hidden bg-white p-3">
+            <img
+              src="./images/p2.png"
+              alt=""
+              class="img-fluid px-5 py-4 w-100 rounded-2 trans-03" />
+            <div class="product-info p-3">
+              <p class="text-uppercase fs-5">americano pure</p>
+              <div
+                class="controlls text-uppercase d-flex align-items-center justify-content-between">
+                <span class="price rounded py-1 px-2 text-white">$25</span>
+                <span class="add btn trans-03">add to cart</span>
+              </div>
+            </div>
+          </div>
+          <div class="product rounded overflow-hidden bg-white p-3">
+            <img
+              src="./images/p3.png"
+              alt=""
+              class="img-fluid px-5 py-4 w-100 rounded-2 trans-03" />
+            <div class="product-info p-3">
+              <p class="text-uppercase fs-5">americano pure</p>
+              <div
+                class="controlls text-uppercase d-flex align-items-center justify-content-between">
+                <span class="price rounded py-1 px-2 text-white">$25</span>
+                <span class="add btn trans-03">add to cart</span>
+              </div>
+            </div>
+          </div>
+          <div class="product rounded overflow-hidden bg-white p-3">
+            <img
+              src="./images/p4.png"
+              alt=""
+              class="img-fluid px-5 py-4 w-100 rounded-2 trans-03" />
+            <div class="product-info p-3">
+              <p class="text-uppercase fs-5">americano pure</p>
+              <div
+                class="controlls text-uppercase d-flex align-items-center justify-content-between">
+                <span class="price rounded py-1 px-2 text-white">$25</span>
+                <span class="add btn trans-03">add to cart</span>
+              </div>
+            </div>
+          </div>
+          <div class="product rounded overflow-hidden bg-white p-3">
+            <img
+              src="./images/p5.png"
+              alt=""
+              class="img-fluid px-5 py-4 w-100 rounded-2 trans-03" />
+            <div class="product-info p-3">
+              <p class="text-uppercase fs-5">americano pure</p>
+              <div
+                class="controlls text-uppercase d-flex align-items-center justify-content-between">
+                <span class="price rounded py-1 px-2 text-white">$25</span>
+                <span class="add btn trans-03">add to cart</span>
+              </div>
+            </div>
+          </div>
+          <div class="product rounded overflow-hidden bg-white p-3">
+            <img
+              src="./images/p6.png"
+              alt=""
+              class="img-fluid px-5 py-4 w-100 rounded-2 trans-03" />
+            <div class="product-info p-3">
+              <p class="text-uppercase fs-5">americano pure</p>
+              <div
+                class="controlls text-uppercase d-flex align-items-center justify-content-between">
+                <span class="price rounded py-1 px-2 text-white">$25</span>
+                <span class="add btn trans-03">add to cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Products Section ========== -->
+
+    <!-- ========== Customers Section ========== -->
+
+    <section class="customers mt-5" id="customers">
+      <h2 class="text-uppercase text-center">our customer's</h2>
+      <div class="container resp-grid gap-3 py-3">
+        <div class="testi text-center p-3 rounded trans-03">
+          <div class="rate mb-3">
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star-half-stroke fa-lg"></i>
+          </div>
+          <p class="text-black-50">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In atque
+            iure laboriosam harum debitis blanditiis inventore aspernatur.
+          </p>
+          <p class="name fs-4 fw-medium text-capitalize">yasin arafat</p>
+          <img
+            src="./images/rev1.jpg"
+            alt=""
+            class="img-fluid rounded-circle" />
+        </div>
+        <div class="testi text-center p-3 rounded trans-03">
+          <div class="rate mb-3">
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star-half-stroke fa-lg"></i>
+          </div>
+          <p class="text-black-50">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In atque
+            iure laboriosam harum debitis blanditiis inventore aspernatur.
+          </p>
+          <p class="name fs-4 fw-medium text-capitalize">Abdallah Ahmed</p>
+          <img
+            src="./images/rev2.jpg"
+            alt=""
+            class="img-fluid rounded-circle" />
+        </div>
+        <div class="testi text-center p-3 rounded trans-03">
+          <div class="rate mb-3">
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <i class="fa-solid fa-star-half-stroke fa-lg"></i>
+          </div>
+          <p class="text-black-50">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In atque
+            iure laboriosam harum debitis blanditiis inventore aspernatur.
+          </p>
+          <p class="name fs-4 fw-medium text-capitalize">yara omar</p>
+          <img
+            src="./images/rev3.jpg"
+            alt=""
+            class="img-fluid rounded-circle" />
+        </div>
+      </div>
+    </section>
+    <!-- ========== Customers Section ========== -->
+
+    <!-- ========== Footer Section ========== -->
+
+    <footer class="mt-5">
+      <div class="container-fluid resp-grid gap-4">
+        <div class="part text-capitalize">
+          <h3>coffee shop</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+            nam. Possimus tempora adipisci ipsa blanditiis, debitis dolor quas a
+            in sapiente?
+          </p>
+          <div class="social d-flex gap-3">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f fa-xl rounded trans-03"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter fa-xl rounded trans-03"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram fa-xl rounded trans-03"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok fa-xl rounded trans-03"></i>
+            </a>
+          </div>
+        </div>
+        <div class="part text-capitalize">
+          <h3>support</h3>
+          <ul>
+            <li>
+              <a href="#">product</a>
+            </li>
+            <li>
+              <a href="#">help & support</a>
+            </li>
+            <li>
+              <a href="#">return policy</a>
+            </li>
+            <li>
+              <a href="#">terms of use</a>
+            </li>
+            <li>
+              <a href="#" class="">profuct</a>
+            </li>
+          </ul>
+        </div>
+        <div class="part text-capitalize">
+          <h3>view guides</h3>
+          <ul>
+            <li>
+              <a href="#">features</a>
+            </li>
+            <li>
+              <a href="#">careers</a>
+            </li>
+            <li>
+              <a href="#">blog posts</a>
+            </li>
+            <li>
+              <a href="#">our branches</a>
+            </li>
+          </ul>
+        </div>
+        <div class="part text-capitalize">
+          <h3>contact</h3>
+          <ul class="fw-medium">
+            <li class="mb-3">
+              <i class="fa-solid fa-location-dot fa-lg me-2"></i>
+              <span>250 new york city, USA 10001</span>
+            </li>
+            <li class="mb-3">
+              <i class="fa-solid fa-phone fa-lg me-2"></i>
+              <span>+1 444 744 8444</span>
+            </li>
+            <li class="mb-3">
+              <i class="fa-solid fa-envelope fa-lg me-2"></i>
+              <span>coffe@shop.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="copy text-capitalize text-center py-3 text-black-50 fw-semibold">
+        &copy; abdallah moMen all right reserved
+      </div>
+    </footer>
+
+    <!-- ========== Footer Section ========== -->
 
     <!-- BootStrap 5 Library -->
     <script src="./js/bootstrap.bundle.min.js"></script>

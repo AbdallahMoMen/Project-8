@@ -12,7 +12,6 @@
 - FontAwesome Icons Library
 - JavaScript
 - jQuery Library
-- Swiper JS
 
 ## Features
 
