@@ -245,6 +245,10 @@ header input:focus {
 
 /* ========== Footer Section ========== */
 
+footer {
+  border-top: 2px solid var(--text-color);
+}
+
 footer .part ul a {
   color: var(--text-color);
 }
@@ -263,7 +267,7 @@ footer .part .social a i:hover {
   background-color: var(--main-color);
 }
 
-footer.copy {
+footer .copy {
   background-color: var(--second-color);
 }
 
